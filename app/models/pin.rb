@@ -10,6 +10,6 @@ class Pin < ActiveRecord::Base
 
   def image_remote_url=(url_value)
     self.image = URI.parse(url_value) unless url_value.blank?
-    super
+    # super
   end
 end

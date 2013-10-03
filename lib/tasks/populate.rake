@@ -11,7 +11,6 @@ namespace :db do
         password: password,
         password_confirmation: password)
     end
-
     User.all.each do |user|
       puts "[DEBUG] uploading images for user #{user.id} of #{User.last.id}"
       10.times do |n|
